@@ -7,7 +7,6 @@ pipeline {
                  withCredentials([string(credentialsId: 'snyk', variable: 'MY_SECRET')]) {
                     sh '''
                         ./script1.sh
-                        ./script2.sh
                     '''
                 }
             }
